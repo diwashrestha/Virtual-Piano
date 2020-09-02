@@ -1,18 +1,101 @@
+.piano_body{
+    display: block;
+    width: fit-content;
+    padding-left: 2em;
+    padding-right: 2em;
+    background: khaki;
+    margin:12% auto;
+}
 .container{
     width: fit-content;
     margin: 12% auto;
 }
-kbd{
+.white-keys kbd{
     display: inline-block;
     background: white;
     margin-left: 0px;
     border: black solid;
-    height: 500px;
-    width: 100px;
+    height: 250px;
+    width: 60px;
     text-align: center;
-    margin-left: 0;
 }
 
-body{
-    background-color: indigo;
+.black-keys kbd{
+    display: inline-block;
+    background: black;
+    color: white;
+    margin-left: 0px;
+    border: black solid;
+    height: 75px;
+    width: 30px;
+    text-align: center;
+    margin-left: 0;
+    position: relative;
+    top: -505px;
+}
+#first {
+    position: relative;
+    z-index: 1;
+    right: -50px;
+    top: -255px;
+}
+
+#second {
+    position: relative;
+    z-index: 1;
+    right: -80px;
+    top: -255px;
+}
+
+#third {
+    position: relative;
+    z-index: 1;
+    right: -180px;
+    top: -255px;
+}
+
+#fourth {
+    position: relative;
+    z-index: 1;
+    right: -210px;
+    top: -255px;
+}
+
+#fifth {
+    position: relative;
+    z-index: 1;
+    right: -240px;
+    top: -255px;
+}
+
+#sixth {
+    position: relative;
+    z-index: 1;
+    right: -210px;
+    top: -255px;
+}
+#seventh {
+    position: relative;
+    z-index: 1;
+    right: -230px;
+    top: -255px;
+}
+#eighth {
+    position: relative;
+    z-index: 1;
+    right: -260px;
+    top: -255px;
+}
+
+#ninth {
+    position: relative;
+    z-index: 1;
+    right: -290px;
+    top: -255px;
+}
+#tenth {
+    position: relative;
+    z-index: 1;
+    right: -41em;
+    top: -255px;
 }
