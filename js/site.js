@@ -3,16 +3,13 @@ document.addEventListener("keypress", event =>{
     let pianoKeys = ["KeyA",
         "KeyS",
         "KeyD", "KeyF", "KeyG","KeyH","KeyJ"];
-    if(pianoKeys.includes(event.code)){
-        console.log(`The '${event.key}' key is pressed.`)
-    }
+ 
 
     if(event.code.includes("KeyA"))
     {
         let audio = new Audio("music/A.mp3");
         console.log("A");
         audio.play();
- 
     }
     else if(event.code.includes("KeyS"))
     {
@@ -74,14 +71,70 @@ document.addEventListener("keypress", event =>{
     }
 });
 
+// function for highlighting the key on keyboard with key is pressed
+
+document.addEventListener("keypress",event=>{
+    let whiteKeys = ["KeyA","KeyS","KeyD","KeyF","KeyG","KeyH","KeyJ","KeyK","KeyL","KeyC","KeyV","KeyB","KeyN","KeyM"];
+    if(whiteKeys.includes(event.code)){
+        let pressKey = document.getElementById(event.code);
+        pressKey.style.backgroundColor = "royalblue";
+        pressKey.style.boxShadow = "none";
+    }
+});
+
+document.addEventListener("keyup", event =>{
+    let whiteKeys = ["KeyA","KeyS","KeyD","KeyF","KeyG","KeyH","KeyJ","KeyK","KeyL","KeyC","KeyV","KeyB","KeyN","KeyM"];
+
+    whiteKeys.forEach(function(key){
+        let upKey = document.getElementById(key);
+        upKey.style.backgroundColor = "white";
+        upKey.style.boxShadow ="0 5px rgb(161, 161, 161)";
+
+    })
+     
+})
+
+
+// function for black keys 
+document.addEventListener("keypress",event =>{
+    let pianoKeys = ["KeyQ","KeyW","KeyE", "KeyR", "KeyT","KeyY","KeyU",
+                    "KeyI","KeyI","KeyO","KeyP"];
+        if(pianoKeys.includes(event.code)){
+            console.log(`The '${event.key}' key is pressed.`)
+        }
+        if(pianoKeys.includes(event.code)){
+            let pressKey = document.getElementById(event.code);
+            pressKey.style.backgroundColor = "royalblue";
+            pressKey.style.boxShadow = "none";
+        };
+});
+
+document.addEventListener("keyup",event =>{
+    let pianoKeys = ["KeyQ","KeyW","KeyE", "KeyR", "KeyT","KeyY","KeyU",
+    "KeyI","KeyI","KeyO","KeyP"];
+    
+    
+    pianoKeys.forEach(function(key) {
+        console.log(key);
+        let upKey = document.getElementById(key);
+        upKey.style.backgroundColor = "black";
+        upKey.style.boxShadow = "0 5px #444";
+        });
+});
+
+
 
 document.onkeypress = function(e) {
-    if ((e.which || e.keyCode) == 115) { //this is the number code for the letter "S"
-  document.getElementById('start').classList.add("button-active");
-    }
-  };
+    if ((e.which || e.keyCode) == 113) { //this is the number code for the letter "S"
+  let keyS = document.getElementById('first');
+  keyS.style.backgroundColor ="royalblue";
+  keyS.style.boxShadow = "none";
+}
+};
   
   document.onkeyup = function(e) {
-    document.getElementById('start').classList.toggle("button-active");
-    }
+    let keyS = document.getElementById('first');
+    keyS.style.backgroundColor = "black";
+    keyS.style.boxShadow = "0 5px #444";
+};
   

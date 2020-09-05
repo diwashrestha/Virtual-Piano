@@ -18,12 +18,19 @@
     background: white;
     margin-left: 0px;
     border: black solid 1px;
-    height: 280px;
-    width: 65px;
+    height: 16em;
+    width: 4em;
     text-align: center;
     font-size: 1.3em;
-    box-shadow: 0 5px #444;
+    box-shadow: 0 5px rgb(161, 161, 161);
     transform: translateY(4px);
+}
+
+.creator{
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
 }
 
 .black-keys kbd{
@@ -32,106 +39,102 @@
     color: white;
     margin-left: 0px;
     border: black solid;
-    height: 140px;
-    width: 35px;
+    height: 9em;
+    width: 2.1em;
     text-align: center;
     margin-left: 0;
     position: relative;
-    top: -550px;
+    top: -20em;
     font-size: 1.3em;
 }
-#first {
+#KeyQ {
     position: relative;
     z-index: 1;
-    right: -48px;
-    top: -285px;
+    right: -3em;
+    top: -16.2em;
     box-shadow: 0 5px #444;
     transform: translateY(4px);
 }
 
-#first- {
+#KeyW {
     position: relative;
     z-index: 1;
-    right: -48px;
-    top: -285px;
+    right: -4.8em;
+    top: -16.2em;
     box-shadow: 0 5px #444;
     transform: translateY(4px);
 }
 
-#second {
+#KeyE {
     position: relative;
     z-index: 1;
-    right: -76px;
-    top: -285px;
-    box-shadow: 0 5px #444;
-    transform: translateY(4px);
-}
-
-#third {
-    position: relative;
-    z-index: 1;
-    right: -172px;
-    top: -285px;
+    right: -10.8em;
+    top: -16.2em;
     box-shadow: 0 5px #333;
     transform: translateY(4px);
 }
 
-#fourth {
+#KeyR {
     position: relative;
     z-index: 1;
-    right: -198px;
-    top: -285px;
+    right: -12.4em;
+    top: -16.2em;
     box-shadow: 0 5px #444;
     transform: translateY(4px);
 }
 
-#fifth {
+#KeyT {
     position: relative;
     z-index: 1;
-    right: -222px;
-    top: -285px;
+    right: -14em;
+    top: -16.2em;
     box-shadow: 0 5px #444;
     transform: translateY(4px);
 }
 
-#sixth {
+#KeyY {
     position: relative;
     z-index: 1;
-    right: -320px;
-    top: -285px;
+    right: -20em;
+    top: -16.2em;
     box-shadow: 0 5px #444;
     transform: translateY(4px);
 }
-#seventh {
+#KeyU {
     position: relative;
     z-index: 1;
-    right: -348px;
-    top: -285px;
+    right: -21.8em;
+    top: -16.2em;
     box-shadow: 0 5px #444;
     transform: translateY(4px);
 }
-#eighth {
+#KeyI {
     position: relative;
     z-index: 1;
-    right: -375px;
-    top: -285px;
+    right: -23.4em;
+    top: -16.2em;
     box-shadow: 0 5px #444;
     transform: translateY(4px);
 }
 
-#ninth {
+#KeyO {
     position: relative;
     z-index: 1;
-    right: -470px;
-    top: -285px;
+    right: -29.4em;
+    top: -16.2em;
     box-shadow: 0 5px #444;
     transform: translateY(4px);
 }
-#tenth {
+#KeyP {
     position: relative;
     z-index: 1;
-    right: -496px;
-    top: -285px;
+    right: -31.2em;
+    top: -16.2em;
     box-shadow: 0 5px #444;
     transform: translateY(4px);
 }
+.myClass {
+    background-color: red;
+    color: white;
+    font-size: 44px;
+  }
