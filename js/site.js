@@ -1,5 +1,5 @@
 
-document.addEventListener("keydown", event =>{
+document.addEventListener("keypress", event =>{
     let pianoKeys = ["KeyA",
         "KeyS",
         "KeyD", "KeyF", "KeyG","KeyH","KeyJ"];
@@ -10,7 +10,9 @@ document.addEventListener("keydown", event =>{
     if(event.code.includes("KeyA"))
     {
         let audio = new Audio("music/A.mp3");
+        console.log("A");
         audio.play();
+ 
     }
     else if(event.code.includes("KeyS"))
     {
@@ -71,3 +73,15 @@ document.addEventListener("keydown", event =>{
         console.warn("Unexpected keypress: '${event.key}")
     }
 });
+
+
+document.onkeypress = function(e) {
+    if ((e.which || e.keyCode) == 115) { //this is the number code for the letter "S"
+  document.getElementById('start').classList.add("button-active");
+    }
+  };
+  
+  document.onkeyup = function(e) {
+    document.getElementById('start').classList.toggle("button-active");
+    }
+  

@@ -1,23 +1,29 @@
 .piano_body{
     display: block;
     width: fit-content;
-    padding-left: 2em;
-    padding-right: 2em;
-    background: khaki;
+    padding-left: 1.5em;
+    padding-top: 6em;
+    padding-bottom: 1em;
+    padding-right: 1.5em;
+    background: black;
     margin:12% auto;
+    border-radius: 1em;
 }
 .container{
     width: fit-content;
-    margin: 12% auto;
+    height: 18em;
 }
 .white-keys kbd{
     display: inline-block;
     background: white;
     margin-left: 0px;
-    border: black solid;
-    height: 250px;
-    width: 60px;
+    border: black solid 1px;
+    height: 280px;
+    width: 65px;
     text-align: center;
+    font-size: 1.3em;
+    box-shadow: 0 5px #444;
+    transform: translateY(4px);
 }
 
 .black-keys kbd{
@@ -26,76 +32,106 @@
     color: white;
     margin-left: 0px;
     border: black solid;
-    height: 75px;
-    width: 30px;
+    height: 140px;
+    width: 35px;
     text-align: center;
     margin-left: 0;
     position: relative;
-    top: -505px;
+    top: -550px;
+    font-size: 1.3em;
 }
 #first {
     position: relative;
     z-index: 1;
-    right: -50px;
-    top: -255px;
+    right: -48px;
+    top: -285px;
+    box-shadow: 0 5px #444;
+    transform: translateY(4px);
+}
+
+#first- {
+    position: relative;
+    z-index: 1;
+    right: -48px;
+    top: -285px;
+    box-shadow: 0 5px #444;
+    transform: translateY(4px);
 }
 
 #second {
     position: relative;
     z-index: 1;
-    right: -80px;
-    top: -255px;
+    right: -76px;
+    top: -285px;
+    box-shadow: 0 5px #444;
+    transform: translateY(4px);
 }
 
 #third {
     position: relative;
     z-index: 1;
-    right: -180px;
-    top: -255px;
+    right: -172px;
+    top: -285px;
+    box-shadow: 0 5px #333;
+    transform: translateY(4px);
 }
 
 #fourth {
     position: relative;
     z-index: 1;
-    right: -210px;
-    top: -255px;
+    right: -198px;
+    top: -285px;
+    box-shadow: 0 5px #444;
+    transform: translateY(4px);
 }
 
 #fifth {
     position: relative;
     z-index: 1;
-    right: -240px;
-    top: -255px;
+    right: -222px;
+    top: -285px;
+    box-shadow: 0 5px #444;
+    transform: translateY(4px);
 }
 
 #sixth {
     position: relative;
     z-index: 1;
-    right: -210px;
-    top: -255px;
+    right: -320px;
+    top: -285px;
+    box-shadow: 0 5px #444;
+    transform: translateY(4px);
 }
 #seventh {
     position: relative;
     z-index: 1;
-    right: -230px;
-    top: -255px;
+    right: -348px;
+    top: -285px;
+    box-shadow: 0 5px #444;
+    transform: translateY(4px);
 }
 #eighth {
     position: relative;
     z-index: 1;
-    right: -260px;
-    top: -255px;
+    right: -375px;
+    top: -285px;
+    box-shadow: 0 5px #444;
+    transform: translateY(4px);
 }
 
 #ninth {
     position: relative;
     z-index: 1;
-    right: -290px;
-    top: -255px;
+    right: -470px;
+    top: -285px;
+    box-shadow: 0 5px #444;
+    transform: translateY(4px);
 }
 #tenth {
     position: relative;
     z-index: 1;
-    right: -41em;
-    top: -255px;
+    right: -496px;
+    top: -285px;
+    box-shadow: 0 5px #444;
+    transform: translateY(4px);
 }
