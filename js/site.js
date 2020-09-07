@@ -27,7 +27,7 @@ document.addEventListener("keypress", event =>{
 
 // loads the mp3 file
 function loadAudio(letter){
-    audioObjs[letter] = new Audio(`./music/keynote/mp3/${letter}.mp3`);
+    audioObjs[letter] = new Audio(`./music/${letter}.mp3`);
     console.log(letter);
 }
 
