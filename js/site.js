@@ -1,21 +1,18 @@
-
+// Combination of keys and notes
 const pianoKeys = { Backquote:"C3",KeyQ:"D3",KeyW:"E3",KeyE:"F3",KeyR:"G3",KeyT:"A3",KeyY:"B3",KeyU:"C4",KeyI:"D4",KeyO:"D4",KeyP:"F4",
     KeyZ:"G4",KeyX:"A4",KeyC:"B4",KeyV:"C5",KeyB:"D5",KeyN:"E5",KeyM:"F5",Comma:"G5",Period:"A5",Slash:"B5",Digit1:"C_3",Digit2:"D_3",
     Digit4:"F_3",Digit5:"G_3",Digit6:"A_3",Digit8:"C_4",Digit9:"D_4",KeyA:"F_4",KeyS:"G_4",KeyD:"A_4",KeyG:"C_5",KeyH:"D_5",KeyK:"F_5",KeyL:"G_5",Semicolon:"A_5"};
 
-//const pianoNote = Object.values(pianoKeys);
 
 let audioObjs = {};
 
-//pianoNote.forEach(loadAudio);
-//pianoKeys.forEach(loadAudio)
 
 document.addEventListener("keypress", event =>{
     const letter = event.code
     if(pianoKeys.hasOwnProperty(letter)){
-        loadAudio(pianoKeys[letter])
+        loadAudio(pianoKeys[letter]) // loads the audio for th pressed key
         console.log(`The '${letter}' key is pressed.`)
-        audioObjs[pianoKeys[letter]].play()
+        audioObjs[pianoKeys[letter]].play() // plays the required notes
 
         // print the key note
         let keynote = pianoKeys[letter].replace(/_/g, "#");
@@ -28,27 +25,11 @@ document.addEventListener("keypress", event =>{
 });
 
 
+// loads the mp3 file
 function loadAudio(letter){
     audioObjs[letter] = new Audio(`./music/keynote/mp3/${letter}.mp3`);
     console.log(letter);
 }
-
-/* document.addEventListener("keydown", event => {
-    const letter = event.key.toUpperCase()
-    if (pianoKeys.includes(letter)) {
-        loadAudio(letter) //Audio is preloaded but load again to satisfy the test
-        console.log(`The '${event.key}' key is pressed.`)
-        audioObjs[letter].play()
-    }
-    else {
-        console.warn(`Unexpected keypress: '${event.code}'`)
-    }
-});
-
-function loadAudio(letter) {
-    audioObjs[letter] = new Audio(`../music/${letter}.mp3`)
-} */
-
 
 
 // function for highlighting the white keys on keyboard with key is pressed
