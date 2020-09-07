@@ -6,10 +6,11 @@ const pianoKeys = { Backquote:"C3",KeyQ:"D3",KeyW:"E3",KeyE:"F3",KeyR:"G3",KeyT:
 const pianoNote = Object.values(pianoKeys);
 
 let audioObjs = {};
+
 pianoNote.forEach(loadAudio);
 //pianoKeys.forEach(loadAudio)
 
-document.addEventListener("keydown", event =>{
+document.addEventListener("keypress", event =>{
     const letter = event.code
     if(pianoKeys.hasOwnProperty(letter)){
         loadAudio(pianoKeys[letter])
@@ -26,10 +27,10 @@ document.addEventListener("keydown", event =>{
     }
 });
 
-function loadAudio(letter){
 
+function loadAudio(letter){
+    audioObjs[letter] = new Audio(`./music/keynote/mp3/${letter}.mp3`);
     console.log(letter);
-    audioObjs[letter] = new Audio(`./music/keynote/${letter}.wav`);
 }
 
 /* document.addEventListener("keydown", event => {
@@ -80,9 +81,7 @@ document.addEventListener("keyup", event =>{
 document.addEventListener("keypress",event =>{
     let pianoKeys = ["Digit1","Digit2","Digit4", "Digit5", "Digit6","Digit8","Digit9",
                     "KeyA","KeyS","KeyD","KeyG","KeyH","KeyK","KeyL","Semicolon"];
-        if(pianoKeys.includes(event.code)){
-            console.log(`The '${event.key}' key is pressed.`)
-        }
+
         if(pianoKeys.includes(event.code)){
             let pressKey = document.getElementById(event.code);
             pressKey.style.backgroundColor = "royalblue";
