@@ -1,30 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@700&display=swap');
+
+body{
+
+    background-color: #457bf0;
+}
+
 .piano_body{
-    display: block;
+    display: grid;
     width: fit-content;
     padding-left: 1.5em;
-    padding-top: 6em;
+    padding-top: 2em;
     padding-bottom: 1em;
     padding-right: 1.5em;
     background: black;
-    margin:12% auto;
+    margin:5% auto;
     border-radius: 1em;
 }
 .container{
     width: fit-content;
     height: 18em;
+    margin-bottom: 0px;
 }
-.white-keys kbd{
+
+.piano_name{
+    color: white;
+    position: relative;
+    right:2em;
+    margin: 0px;
+    text-align: right;
+}
+
+.piano_name p{
+    margin: 0px;
+    font-size: large;
+    font-family: 'Pacifico', cursive;
+}
+
+.keynote{
+    margin:0 auto;
+    width: 12em;
+    height: 5em;
+    display: block;
+    background-color: rgb(185, 161, 161);
+    margin-bottom: 1em;
+    border: gray solid .5em;
+    bottom: 0;
+
+}
+
+#keynote-name{
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.white-keys{
     display: inline-block;
     background: white;
     margin-left: 0px;
     border: black solid 1px;
-    height: 16em;
-    width: 4em;
+    height: 13em;
+    width: 2.4em;
     text-align: center;
     font-size: 1.3em;
+    border-radius: .3em;
     box-shadow: 0 5px rgb(161, 161, 161);
     transform: translateY(4px);
 }
+
+    .white-keys p {
+        position:relative;
+        bottom:-80%;
+    }
+
 
 .creator{
     text-align: center;
@@ -33,108 +83,165 @@
     font-size: larger;
 }
 
-.black-keys kbd{
+.black-keys p{
     display: inline-block;
     background: black;
     color: white;
     margin-left: 0px;
-    border: black solid;
-    height: 9em;
-    width: 2.1em;
+    border: black solid 1px;
+    height: 7em;
+    width: 1.2em;
+    border-radius: .2em;
     text-align: center;
     margin-left: 0;
     position: relative;
     top: -20em;
     font-size: 1.3em;
 }
-#KeyQ {
+#Digit1 {
     position: relative;
     z-index: 1;
-    right: -3em;
-    top: -16.2em;
-    box-shadow: 0 5px #444;
+    right: -1.8em;
+    top: -14.1em;
+    box-shadow: 0 10px #444;
     transform: translateY(4px);
 }
 
-#KeyW {
+#Digit2 {
     position: relative;
     z-index: 1;
-    right: -4.8em;
-    top: -16.2em;
-    box-shadow: 0 5px #444;
+    right: -3.4em;
+    top: -14.1em;
+    box-shadow: 0 10px #444;
     transform: translateY(4px);
 }
 
-#KeyE {
+#Digit4 {
     position: relative;
     z-index: 1;
-    right: -10.8em;
-    top: -16.2em;
-    box-shadow: 0 5px #333;
+    right: -6.8em;
+    top: -14.1em;
+    box-shadow: 0 10px #444;
     transform: translateY(4px);
 }
 
-#KeyR {
+#Digit5 {
     position: relative;
     z-index: 1;
-    right: -12.4em;
-    top: -16.2em;
-    box-shadow: 0 5px #444;
+    right: -8.2em;
+    top: -14.1em;
+    box-shadow: 0 10px #444;
     transform: translateY(4px);
 }
 
-#KeyT {
+#Digit6 {
     position: relative;
     z-index: 1;
-    right: -14em;
-    top: -16.2em;
-    box-shadow: 0 5px #444;
+    right: -9.6em;
+    top: -14.1em;
+    box-shadow: 0 10px #444;
     transform: translateY(4px);
 }
 
-#KeyY {
+#Digit8 {
     position: relative;
     z-index: 1;
-    right: -20em;
-    top: -16.2em;
-    box-shadow: 0 5px #444;
+    right: -13.2em;
+    top: -14.1em;
+    box-shadow: 0 10px #444;
     transform: translateY(4px);
 }
-#KeyU {
+#Digit9 {
     position: relative;
     z-index: 1;
-    right: -21.8em;
-    top: -16.2em;
-    box-shadow: 0 5px #444;
+    right: -14.8em;
+    top: -14.1em;
+    box-shadow: 0 10px #444;
     transform: translateY(4px);
 }
-#KeyI {
+#KeyA {
     position: relative;
     z-index: 1;
-    right: -23.4em;
-    top: -16.2em;
-    box-shadow: 0 5px #444;
+    right: -18.2em;
+    top: -14.1em;
+    box-shadow: 0 10px #444;
     transform: translateY(4px);
 }
 
-#KeyO {
+#KeyS {
     position: relative;
     z-index: 1;
-    right: -29.4em;
-    top: -16.2em;
-    box-shadow: 0 5px #444;
+    right: -19.6em;
+    top: -14.1em;
+    box-shadow: 0 10px #444;
     transform: translateY(4px);
 }
-#KeyP {
+#KeyD {
     position: relative;
     z-index: 1;
-    right: -31.2em;
-    top: -16.2em;
-    box-shadow: 0 5px #444;
+    right: -21em;
+    top: -14.1em;
+    box-shadow: 0 10px #444;
+    transform: translateY(4px);
+}
+
+
+#KeyG {
+    position: relative;
+    z-index: 1;
+    right: -24.4em;
+    top: -14.1em;
+    box-shadow: 0 10px #444;
+    transform: translateY(4px);
+}
+#KeyH {
+    position: relative;
+    z-index: 1;
+    right: -26em;
+    top: -14.1em;
+    box-shadow: 0 10px #444;
+    transform: translateY(4px);
+}
+#KeyK {
+    position: relative;
+    z-index: 1;
+    right: -29.6em;
+    top: -14.1em;
+    box-shadow: 0 10px #444;
+    transform: translateY(4px);
+}
+
+#KeyL {
+    position: relative;
+    z-index: 1;
+    right: -31em;
+    top: -14.1em;
+    box-shadow: 0 10px #444;
+    transform: translateY(4px);
+}
+#Semicolon {
+    position: relative;
+    z-index: 1;
+    right: -32.4em;
+    top: -14.1em;
+    box-shadow: 0 10px #444;
     transform: translateY(4px);
 }
 .myClass {
     background-color: red;
     color: white;
     font-size: 44px;
+  }
+
+  .wrap {
+    height: 200px;
+    width: 200px;
+    border: 1px solid #aaa;
+    margin: 10px;
+    display: flex;
+  }
+
+  .wrap span {
+    align-self: flex-end;
+    vertical-align: bottom;
   }
